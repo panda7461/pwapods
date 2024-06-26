@@ -5,7 +5,7 @@
       .then(registration => console.log('Service Worker registered with scope:', registration.scope))
       .catch(error => console.log('Service Worker registration failed:', error));
   }
-  const RSS_FEED_URL = 'https://example.com/path/to/rss/feed.xml'; // 実際のRSSフィードのURL
+  const RSS_FEED_URL = 'https://media.rss.com/businessenchanclas/feed.xml'; // 実際のRSSフィードのURL
 
 async function fetchPodcastFeed(url) {
   const response = await fetch(url);
