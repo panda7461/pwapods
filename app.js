@@ -1,5 +1,5 @@
 const PROXY_URL = 'http://localhost:3000/proxy?url='; // プロキシサーバーのURL
-const RSS_FEED_URL = 'https://media.rss.com/businessenchanclas/feed.xml'; // 実際のRSSフィードのURL
+const RSS_FEED_URL = 'https://www.nhk.or.jp/s-media/news/podcast/list/v1/all.xml'; // 実際のRSSフィードのURL
 
 async function fetchPodcastFeed(url) {
   const response = await fetch(PROXY_URL + encodeURIComponent(url));
