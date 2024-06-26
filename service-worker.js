@@ -1,12 +1,11 @@
-// service-worker.js
 self.addEventListener('install', event => {
 	event.waitUntil(
 	  caches.open('podcast-cache').then(cache => {
 		return cache.addAll([
-		  '/pwapods/',
-		  '/pwapods/index.html',
-		  '/pwapods/styles.css',
-		  '/pwapods/app.js',
+		  '/',
+		  '/index.html',
+		  '/styles.css',
+		  '/app.js',
 		  // 必要な他のファイル
 		]);
 	  })
@@ -20,3 +19,4 @@ self.addEventListener('install', event => {
 	  })
 	);
   });
+  
