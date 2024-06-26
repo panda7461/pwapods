@@ -2,10 +2,10 @@ self.addEventListener('install', event => {
 	event.waitUntil(
 	  caches.open('podcast-cache').then(cache => {
 		return cache.addAll([
-		  '/',
-		  '/index.html',
-		  '/styles.css',
-		  '/app.js',
+		  '/pwapods/',
+		  '/pwapods/index.html',
+		  '/pwapods/styles.css',
+		  '/pwapods/app.js',
 		  // 必要な他のファイル
 		]);
 	  })
