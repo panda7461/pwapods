@@ -1,7 +1,7 @@
 {
 	"name": "Podcast Player",
 	"short_name": "Podcast",
-	"start_url": "/",
+	"start_url": "/pwapods/",
 	"display": "standalone",
 	"background_color": "#ffffff",
 	"theme_color": "#000000",
